@@ -6,20 +6,39 @@
 			body {
 				background-color: rgb(55, 55, 55);
 				margin: auto;
+				text-align: center;
+				color: rgb(255, 255, 255);
+				align-content: center;
 			}
 			img {
 				display: block;
 				margin: auto;
-				width: 30%;
+				max-width: 70%;
 
 				border-radius: 10px;
 			}
 			h2 {
 				text-align: center;
-				font-size: 6vh;
+				font-size: 9vh;
 			}
 			#title {
 				background-color: rgb(0, 128, 128);
+			}
+			p {
+				background-color: rgb(36, 35, 35);
+			}
+			.individual {
+				font-size: 20px;
+				/* height: 200px; */
+				width: 70%;
+				overflow-y: auto;
+				bottom: 0;
+			}
+			#content {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				/* max-width: 70%; */
 			}
 		</style>
 	</head>
@@ -28,23 +47,49 @@
 			<h2>Projects I've completed</h2>
 		</div>
 		<div id="content">
-			<a href="http://defeated-money.surge.sh/"
-				><img
-					class="projects"
-					src="movies.jpg"
-					alt="The Movie Database API was used for this app"
-			/></a>
+			<div class="individual">
+				<a href="http://defeated-money.surge.sh/"
+					><img
+						class="projects"
+						src="movies.jpg"
+						alt="The Movie Database API was used for this app"
+				/></a>
 
-			<a href="https://rocky-anchorage-77709.herokuapp.com/music"
-				><img
-					class="projects"
-					src="turntable.jpg"
-					alt="High Fidelity is a record catalogue app made in EJS"
-			/></a>
-
-			<a href="https://soylentgreen.herokuapp.com/"
-				><img class="projects" src="salad.jpeg"
-			/></a>
+				<p>
+					I made this web page using jQuery and HTML. If you type a movie that
+					you like into the search bar, it makes an AJAX call to an API and
+					returns 10 similar movies. It displays the movie poster and the plot
+					summary of each movie so you can click through them and find something
+					to watch based on your search.
+				</p>
+			</div>
+			<div class="individual">
+				<a href="https://rocky-anchorage-77709.herokuapp.com/music"
+					><img
+						class="projects"
+						src="turntable.jpg"
+						alt="High Fidelity is a record catalogue app made in EJS"
+				/></a>
+				<p>
+					I made this web page using Express.js and a MongoDB back end, and it's
+					mostly just a tool to keep track of a record collection, but I didn't
+					lock it down so a user can play with the functionality without having
+					to make an account and sign in.
+				</p>
+			</div>
+			<div class="individual">
+				<a href="https://soylentgreen.herokuapp.com/"
+					><img class="projects" src="salad.jpeg"
+				/></a>
+				<p>
+					I made this web page with a React.js front end and a Ruby on Rails
+					back end. It's a fun way to collect recipes and display them. I had
+					originally set out to just make a serious collection of vegan recipes
+					so I could share it with my friend, but ended up adding recipes using
+					human parts because I've had many debates about the ethics of eating a
+					consenting human.
+				</p>
+			</div>
 		</div>
 	</body>
 </html>
