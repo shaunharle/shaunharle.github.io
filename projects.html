@@ -4,7 +4,7 @@
 		<title>Projects</title>
 		<style>
 			body {
-				background-color: rgb(55, 55, 55);
+				background-color: black;
 				margin: auto;
 				text-align: center;
 				color: rgb(255, 255, 255);
@@ -16,6 +16,10 @@
 				max-width: 70%;
 
 				border-radius: 10px;
+			}
+			.topnav {
+				margin-top: 0.5em;
+				width: 100%;
 			}
 			h2 {
 				text-align: center;
@@ -40,7 +44,29 @@
 				align-items: center;
 				/* max-width: 70%; */
 			}
+			.column {
+				width: 33.33333333%;
+				float: left;
+			}
+			.topnav a:link,
+			a:visited {
+				/* padding: 14px 25px; */
+				background-color: rgba(6, 118, 118, 0.441);
+				text-align: center;
+				text-decoration: none;
+				display: inline-block;
+			}
+			.topnav a:hover,
+			a:active {
+				background-color: rgba(6, 118, 118, 0.722);
+			}
 		</style>
+		<div class="topnav">
+			<a class="column" href="index.html">Home</a>
+			<a class="column" href="projects.html">Projects</a>
+			<a class="column" href="resume.html">Resume</a>
+		</div>
+		<br />
 	</head>
 	<body>
 		<div id="title">
