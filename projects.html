@@ -1,77 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<link href="/normalize.css" rel="stylesheet" />
 		<link
 			href="https://fonts.googleapis.com/css?family=Quicksand"
 			rel="stylesheet"
 		/>
+		<link rel="stylesheet" href="style.css" />
 		<title>Projects</title>
-		<style>
-			body {
-				font-family: "Quicksand", sans-serif;
-				background-color: white;
-				margin: auto;
-				text-align: center;
-				color: rgb(255, 255, 255);
-				align-content: center;
-			}
-			img {
-				display: block;
-				margin: auto;
-				max-width: 70%;
-				border-radius: 10px;
-			}
-			.topnav {
-				margin-top: 1em;
-				width: 100%;
-			}
-			h1 {
-				font-family: "Quicksand", sans-serif;
-				font-size: 4em;
-				color: black;
-				text-align: center;
-				background: rgb(6, 118, 118);
-				margin: -8px -8px 0 -8px;
-			}
-
-			p {
-				background-color: rgb(36, 35, 35);
-				width: 70%;
-				margin: 1% 15% 3% 15%;
-				border-radius: 10px;
-			}
-			.individual {
-				font-size: 20px;
-				/* height: 200px; */
-				width: 70%;
-				overflow-y: auto;
-				bottom: 0;
-			}
-			#content {
-				display: flex;
-				flex-direction: column;
-				align-items: center;
-				/* max-width: 70%; */
-			}
-			.column {
-				width: 33.33333333%;
-				float: left;
-			}
-			.topnav a:link,
-			a:visited {
-				/* padding: 14px 25px; */
-				background-color: rgba(6, 118, 118, 0.441);
-				text-align: center;
-				text-decoration: none;
-				color: black;
-				display: inline-block;
-			}
-			.topnav a:hover,
-			a:active {
-				background-color: rgba(6, 118, 118, 0.722);
-			}
-		</style>
 	</head>
 	<body>
 		<div class="topnav">
@@ -80,7 +15,7 @@
 			<a class="column" href="shaun_harle_resume.pdf" target="_blank">Resume</a>
 		</div>
 		<h1>Projects I've completed</h1>
-
+		<br />
 		<div id="content">
 			<div class="individual">
 				<a href="http://defeated-money.surge.sh/"
@@ -90,7 +25,7 @@
 						alt="The Movie Database API was used for this app"
 				/></a>
 
-				<p>
+				<p class="projectblurb">
 					I made this web page using jQuery and HTML. If you type a movie that
 					you like into the search bar, it makes an AJAX call to an API and
 					returns 10 similar movies. It displays the movie poster and the plot
@@ -105,7 +40,7 @@
 						src="turntable.jpg"
 						alt="High Fidelity is a record catalogue app made in EJS"
 				/></a>
-				<p>
+				<p class="projectblurb">
 					I made this web page using Express.js and a MongoDB back end, and it's
 					mostly just a tool to keep track of a record collection, but I didn't
 					lock it down so a user can play with the functionality without having
@@ -116,7 +51,7 @@
 				<a href="https://soylentgreen.herokuapp.com/"
 					><img class="projects" src="salad.jpeg"
 				/></a>
-				<p>
+				<p class="projectblurb">
 					I made this web page with a React.js front end and a Ruby on Rails
 					back end. It's a fun way to collect recipes and display them. I had
 					originally set out to just make a serious collection of vegan recipes

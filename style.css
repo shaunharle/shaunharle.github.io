@@ -1,0 +1,113 @@
+body {
+	font-family: "Quicksand", sans-serif;
+	background-color: white;
+	margin: auto;
+	text-align: center;
+	color: rgb(255, 255, 255);
+	align-content: center;
+}
+
+.topnav {
+	margin-top: 1em;
+	width: 100%;
+	font-size: 5vh;
+}
+
+#contactinfo a {
+	color: black;
+	text-decoration: none;
+	font-size: 5vh;
+}
+#contactinfo a:hover,
+a:active {
+	background-color: rgba(0, 0, 255, 0.228);
+}
+
+h1 {
+	font-family: "Quicksand", sans-serif;
+	font-size: 4em;
+	color: black;
+	text-align: center;
+	background: rgb(6, 118, 118);
+	margin: -8px -8px 0 -8px;
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#container {
+	width: 96%;
+	margin: auto;
+}
+.column {
+	width: 33.33333333%;
+	float: left;
+}
+.column img {
+	width: 90%;
+	height: auto;
+}
+
+#contactinfo {
+	text-align: center;
+	margin-top: 3em;
+}
+
+#profilePic img {
+	margin: 30px 0px 0px 0px;
+	border: 10px solid black;
+	border-radius: 20px;
+	position: relative;
+	/* max-width: 30%; */
+}
+#infoblurb p {
+	font-size: 20px;
+	max-width: 95%;
+	padding: 20px;
+	color: black;
+	margin: 0 auto;
+	text-align: center;
+}
+
+/* THIS IMG STYLING IS PRIMARILY FOR THE PROJECTS PAGE. MAY NEED TO USE CLASS FOR THIS EVENTUALLY IF WEBSITE GROWS TO MORE PAGES */
+img {
+	display: block;
+	margin: auto;
+	max-width: 70%;
+	border-radius: 10px;
+}
+
+.projectblurb {
+	background-color: rgb(36, 35, 35);
+	width: 70%;
+	margin: 1% 15% 3% 15%;
+	border-radius: 10px;
+}
+.individual {
+	font-size: 20px;
+	/* height: 200px; */
+	width: 70%;
+	overflow-y: auto;
+	bottom: 0;
+}
+#content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	/* max-width: 70%; */
+}
+
+.topnav a:link,
+a:visited {
+	/* padding: 14px 25px; */
+	background-color: rgba(41, 194, 194, 0.441);
+	text-align: center;
+	text-decoration: none;
+	color: black;
+	display: inline-block;
+}
+.topnav a:hover,
+a:active {
+	background-color: rgba(107, 215, 215, 0.722);
+}
